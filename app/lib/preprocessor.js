@@ -22,6 +22,12 @@ module.exports = function(options, specData) {
     copy.logo = path.basename(options.logoFile)
   }
 
+  if (copy.swagger) {
+    copy.openapiVersion = 'v2'
+  } else if (copy.openapi) {
+    copy.openapiVersion = 'v3'
+  }
+
   // The "body"-parameter in each operation is stored in a
   // separate field "_request_body".
   if (copy.paths) {
