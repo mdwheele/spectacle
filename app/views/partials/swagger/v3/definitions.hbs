@@ -4,10 +4,10 @@
     @api public
 --}}
 
-{{#if definitions}}
+{{#if components.schemas}}
   <h1>Schema Definitions</h1>
 
-  {{#each definitions}}
+  {{#each components.schemas}}
     {{>(swagger "definition") title=@key anchor="/definitions" }}
   {{/each}}
 {{/if}}
