@@ -28,6 +28,10 @@ module.exports = function(options, specData) {
     copy.openapiVersion = 'v3'
   }
 
+  if (copy.securityDefinitions || copy.components.securitySchemes) {
+    copy.showSecurity = true
+  }
+
   // The "body"-parameter in each operation is stored in a
   // separate field "_request_body".
   if (copy.paths) {

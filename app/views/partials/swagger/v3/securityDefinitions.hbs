@@ -4,11 +4,11 @@
  @api public
 --}}
 
-{{#if securityDefinitions}}
+{{#if showSecurity}}
   <!-- <h1 id="security" data-traverse-target="security">Security</h1> -->
   <h1 id="authentication" data-traverse-target="authentication">Authentication</h1>
 
-  {{#each securityDefinitions}}
+  {{#each components.securitySchemes}}
     <div id="security-definition-{{@key}}" class="panel">
       <div class="doc-row">
         <div class="doc-copy">
