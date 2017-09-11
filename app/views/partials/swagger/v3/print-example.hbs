@@ -1,3 +1,6 @@
 <!-- <div class="hljs"> -->
-  {{printExample . showReadOnly=showReadOnly}}
+  {{#each body.content as |content type|}}
+  {{type}}<br/>
+  {{printExample content showReadOnly=showReadOnly}}
+  {{/each}}
 <!-- </div> -->

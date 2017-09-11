@@ -85,7 +85,7 @@ var common = {
       return;
     }
 
-  	if (value.example) {
+    if (value.example) {
   	  return value.example;
   	}
     else if (value.schema) {

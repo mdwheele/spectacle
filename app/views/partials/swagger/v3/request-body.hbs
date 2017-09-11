@@ -6,39 +6,31 @@
 --}}
 
 <section class="swagger-request-body">
-  {{!--
-    {{#if consumes}}
-      <p>{{>(swagger "list-of-labels") values=consumes}}</p>
-    {{else if @root.consumes}}
-      <p>
-        <!-- <a href="#swagger-default-consumes">Consumes: </a> -->
-        {{>(swagger "list-of-labels") values=@root.consumes}}
-      </p>
-    {{/if}}
-  --}}
   {{#if body}}
     {{#with body}}
-      {{#if schema.$ref}}
+    {{#each content as |c type|}}
+      {{#if c.schema.$ref}}
         <div class="prop-row">
           <div class="prop-name">
             <div class="swagger-request-model">
-              {{>json-schema/reference schema}}
+              {{>json-schema/reference c.schema}}
             </div>
           </div>
           <div class="prop-value columns small-6">
             <!-- <div class="swagger-request-description"> -->
-              {{md description}}
+              {{../description}}
             <!-- </div> -->
           </div>
         </div>
-      {{else if schema.type}}
+      {{else if content.schema.type}}
         {{#if description}}
           {{md description}}
-        {{else if schema.description}}
+        {{else if content.schema.description}}
           {{md schema.description}}
         {{/if}}
         {{>json-schema/body schema}}
       {{/if}}
+    {{/each}}
     {{/with}}
   {{/if}}
 </section>

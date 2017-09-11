@@ -511,8 +511,51 @@
               </div>
             </div>
             <div class="doc-row">
-              <div class="doc-copy"> </div>
-              <div class="doc-examples"></div>
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/components/schemas/UserProfile">UserProfile</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->accepts any users data to be updated.
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->application/json
+                  <br/> <pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;user_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;user_name_last&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;user_name_first&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;user_email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;user_dob&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;user_iconurl&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;user_status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;user_phone&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;address&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;user_address_line1&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;user_address_line2&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;user_address_city&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;user_postcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;user_state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;country_id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
             </div>
             <div class="doc-row">
               <div class="doc-copy">
@@ -984,6 +1027,21 @@
             </div>
             <div class="doc-row">
               <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/components/schemas/EmployerOwnProfile">EmployerOwnProfile</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->Unique employer identifier to be used for fetching specific employer profile data.
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
                 <section class="swagger-request-params">
                   <div class="prop-row prop-group">
                     <div class="prop-name">
@@ -1007,7 +1065,45 @@
                   </div>
                 </section>
               </div>
-              <div class="doc-examples"></div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->application/json
+                  <br/> <pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;employer_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;employer_business_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;employer_iconurl&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;user_name_last&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;user_name_first&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;employer_email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;employer_phone&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;industry_id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;employer_abn&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;employer_acn&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;employer_contact_email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;employer_contact_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;payroll_interval_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;payroll_approval_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;payroll_release_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;tax_entity_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;tax_reporting_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;employer_tax_gst&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;employer_tax_payrolltax&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;address&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;employer_address_line1&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;employer_address_line2&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;employer_address_city&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;employer_postcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;employer_state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;country_id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
             </div>
             <div class="doc-row">
               <div class="doc-copy">
@@ -1809,8 +1905,40 @@
               </div>
             </div>
             <div class="doc-row">
-              <div class="doc-copy"> </div>
-              <div class="doc-examples"></div>
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/components/schemas/Unavailability">Unavailability</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->accepts unavailability form data.
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->application/json
+                  <br/> <pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;employee_unavailability_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;employee_unavailability_date_start&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;employee_unavailability_date_endv&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;employee_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;notes&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;employee_unavailability_special_day&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;employee_unavailability_fullday&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
             </div>
             <div class="doc-row">
               <div class="doc-copy">
@@ -2270,6 +2398,7 @@
             </div>
             <div class="doc-row">
               <div class="doc-copy">
+                <section class="swagger-request-body"> </section>
                 <section class="swagger-request-params">
                   <div class="prop-row prop-group">
                     <div class="prop-name">
@@ -2293,7 +2422,13 @@
                   </div>
                 </section>
               </div>
-              <div class="doc-examples"></div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <!-- </div> -->
+                </section>
+              </div>
             </div>
             <div class="doc-row">
               <div class="doc-copy">
@@ -2340,8 +2475,16 @@
               </div>
             </div>
             <div class="doc-row">
-              <div class="doc-copy"> </div>
-              <div class="doc-examples"></div>
+              <div class="doc-copy">
+                <section class="swagger-request-body"> </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <!-- </div> -->
+                </section>
+              </div>
             </div>
             <div class="doc-row">
               <div class="doc-copy">
@@ -2741,8 +2884,37 @@
               </div>
             </div>
             <div class="doc-row">
-              <div class="doc-copy"> </div>
-              <div class="doc-examples"></div>
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/components/schemas/Documents">Documents</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->accepts document data to be added.
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->application/json
+                  <br/> <pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;user_document_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;user_document_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;user_document_issuer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;user_document_expiry&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
             </div>
             <div class="doc-row">
               <div class="doc-copy">
@@ -2790,6 +2962,21 @@
             </div>
             <div class="doc-row">
               <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/components/schemas/Documents">Documents</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->accepts document data to be edited.
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
                 <section class="swagger-request-params">
                   <div class="prop-row prop-group">
                     <div class="prop-name">
@@ -2813,7 +3000,20 @@
                   </div>
                 </section>
               </div>
-              <div class="doc-examples"></div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->application/json
+                  <br/> <pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;user_document_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;user_document_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;user_document_issuer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;user_document_expiry&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
             </div>
             <div class="doc-row">
               <div class="doc-copy">
@@ -3198,6 +3398,21 @@
             </div>
             <div class="doc-row">
               <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/components/schemas/Locations">Locations</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->accepts locations page data to be added.
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
                 <section class="swagger-request-params">
                   <div class="prop-row prop-group">
                     <div class="prop-name">
@@ -3221,7 +3436,19 @@
                   </div>
                 </section>
               </div>
-              <div class="doc-examples"></div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->application/json
+                  <br/> <pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;location_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;employee_location_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;employee_location_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
             </div>
             <div class="doc-row">
               <div class="doc-copy">
@@ -3341,6 +3568,21 @@
             </div>
             <div class="doc-row">
               <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/components/schemas/Note">Note</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->accepts noted page data to be added.
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
                 <section class="swagger-request-params">
                   <div class="prop-row prop-group">
                     <div class="prop-name">
@@ -3364,7 +3606,22 @@
                   </div>
                 </section>
               </div>
-              <div class="doc-examples"></div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->application/json
+                  <br/> <pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;employee_notes_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;employee_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;to_user_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;location_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;employer_shift_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;employee_notes&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
             </div>
             <div class="doc-row">
               <div class="doc-copy">
@@ -3555,6 +3812,21 @@
             </div>
             <div class="doc-row">
               <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/components/schemas/Role">Role</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->accepts role page data to be added.
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
                 <section class="swagger-request-params">
                   <div class="prop-row prop-group">
                     <div class="prop-name">
@@ -3578,7 +3850,19 @@
                   </div>
                 </section>
               </div>
-              <div class="doc-examples"></div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->application/json
+                  <br/> <pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;employee_role_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;employee_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;role_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
             </div>
             <div class="doc-row">
               <div class="doc-copy">
@@ -3768,6 +4052,21 @@
             </div>
             <div class="doc-row">
               <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/components/schemas/RoleVariation">RoleVariation</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->accepts variation page data to be added.
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
                 <section class="swagger-request-params">
                   <div class="prop-row prop-group">
                     <div class="prop-name">
@@ -3791,7 +4090,20 @@
                   </div>
                 </section>
               </div>
-              <div class="doc-examples"></div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->application/json
+                  <br/> <pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;employee_role_variations_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;employee_role_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;variations_type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;variations_value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
             </div>
             <div class="doc-row">
               <div class="doc-copy">
@@ -4054,6 +4366,21 @@
             </div>
             <div class="doc-row">
               <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/components/schemas/BankAllotment">BankAllotment</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->accepts user bank allotment data to be added.
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
                 <section class="swagger-request-params">
                   <div class="prop-row prop-group">
                     <div class="prop-name">
@@ -4077,7 +4404,22 @@
                   </div>
                 </section>
               </div>
-              <div class="doc-examples"></div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->application/json
+                  <br/> <pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;user_bank_allotment_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;user_bank_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;employer_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;user_bank_allotment_percent&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;user_bank_allotment_fixed&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;pay_type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
             </div>
             <div class="doc-row">
               <div class="doc-copy">
@@ -4842,19 +5184,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;user_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employer_shift_assigned_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;role_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;shift_current_time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_name_last&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_name_first&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_iconurl&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_phone&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;shift_status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -4951,27 +5281,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;user_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;user_name_last&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_name_first&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_dob&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_iconurl&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_phone&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;address&quot;</span>: [
-    {
-      <span class="hljs-attr">&quot;user_address_line1&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;user_address_line2&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;user_address_city&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;user_postcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;user_state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;country_id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-    }
-  ]
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -5156,38 +5466,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;employer_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employer_business_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;employer_iconurl&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_name_last&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_name_first&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;employer_email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;employer_phone&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;industry_id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;employer_abn&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;employer_acn&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;employer_contact_email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;employer_contact_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;payroll_interval_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;payroll_approval_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;payroll_release_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;tax_entity_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;tax_reporting_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employer_tax_gst&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employer_tax_payrolltax&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;address&quot;</span>: [
-    {
-      <span class="hljs-attr">&quot;employer_address_line1&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;employer_address_line2&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;employer_address_city&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;employer_postcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;employer_state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;country_id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-    }
-  ]
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -5261,17 +5540,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;employer_shift_assigned_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employer_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employee_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;location_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;role_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;start_date&quot;</span>: <span class="hljs-string">&quot;object&quot;</span>,
-  <span class="hljs-attr">&quot;end_date&quot;</span>: <span class="hljs-string">&quot;object&quot;</span>,
-  <span class="hljs-attr">&quot;note&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -5342,17 +5611,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;employer_shift_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employer_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;location_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;role_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employer_shift_time_start&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;employer_shift_time_end&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;employer_shift_repeat&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
-  <span class="hljs-attr">&quot;notes&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -5403,13 +5662,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;employer_shift_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;object&quot;</span>,
-  <span class="hljs-attr">&quot;count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;publish&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -5490,16 +5743,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;employee_unavailability_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employee_unavailability_date_start&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;employee_unavailability_date_endv&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;employee_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;notes&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;employee_unavailability_special_day&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;employee_unavailability_fullday&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -5553,13 +5797,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;user_document_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;user_document_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_document_issuer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_document_expiry&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -5613,13 +5851,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;user_document_page_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;user_document_page_url&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_document_sort&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_document_id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -5665,12 +5897,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;user_document_share_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;user_document_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employer_id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -5740,15 +5967,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;bank_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;bank_status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;bank_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;bank_fullname&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;bank_description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;bank_iconurl&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -5834,17 +6053,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;user_bank_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;bank_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;user_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;user_bank_status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_bank_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_bank_bsb&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_bank_number&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;created_at&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -5914,15 +6123,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;user_bank_allotment_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;user_bank_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employer_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;user_bank_allotment_percent&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_bank_allotment_fixed&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;pay_type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -5968,12 +6169,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;superfund_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;superfund_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;superfund_description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -6024,13 +6220,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;user_superfund_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;superfund_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;user_superfund_number&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_superfund_status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -6083,14 +6273,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;user_employer_superfund_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;user_superfund_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employer_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employer_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_superfund_status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -6147,13 +6330,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;acount_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;display_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;icon_url&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;account_type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -6226,15 +6403,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;employer_address_line1&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;employer_address_line2&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;employer_address_city&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;employer_postcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;employer_state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;country_id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -6307,15 +6476,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;user_address_line1&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_address_line2&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_address_city&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_postcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;user_state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;country_id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -6372,13 +6533,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;industry_id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;industry_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;industry_code&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;industry_description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -6416,11 +6571,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;payroll_approval_id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;payroll_approval_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -6458,11 +6609,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;payroll_interval_id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;payroll_interval_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -6500,11 +6647,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;payroll_release_id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;payroll_release_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -6542,11 +6685,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;tax_entity_id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;tax_entity_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -6584,11 +6723,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;entity_type_id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;entity_type_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -6631,12 +6766,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;location_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employee_location_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employee_location_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -6676,12 +6806,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;employee_role_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employee_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;role_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -6731,14 +6856,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;employee_role_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employee_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;last_shift&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;first_shift&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;payroll_variations&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -6783,13 +6901,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;employee_role_variations_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employee_role_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;variations_type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;variations_value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -6847,15 +6959,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;employee_notes_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employee_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;to_user_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;location_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employer_shift_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;employee_notes&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>
@@ -6896,12 +7000,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>Example</h5>
-                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
-  <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;integer (int32)&quot;</span>,
-  <span class="hljs-attr">&quot;message&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;fields&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
-}
-</code></pre>
+                  <!-- <div class="hljs"> -->
                   <!-- </div> -->
                 </section>
               </div>

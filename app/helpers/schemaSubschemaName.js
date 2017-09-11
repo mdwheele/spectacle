@@ -4,5 +4,12 @@
  * @returns {*}
  */
 module.exports = function(url) {
-  return url.replace('#/definitions/', '')
+  var openapiVersion = arguments[1].data.root.openapiVersion
+  var replace = '#/definitions/';
+
+  if (openapiVersion === 'v3') {
+    replace = '#/components/schemas/'
+  }
+
+  return url.replace(replace, '')
 };

@@ -9,17 +9,6 @@
   <div class="doc-row">
     <div class="doc-copy">
       <section class="swagger-responses">
-        {{!--
-          {{#if produces}}
-            <p>{{>(swagger "list-of-labels") values=produces}}</p>
-          {{else if @root.produces}}
-            <p>
-              <!-- <a href="#swagger-default-produces">Uses default content-types: </a> -->
-              {{>(swagger "list-of-labels") values=@root.produces}}
-            </p>
-          {{/if}}
-        --}}
-
         {{#each responses}}
           <div class="prop-row prop-group">
             <div class="prop-name">

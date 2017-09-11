@@ -57,8 +57,8 @@
   <div class="doc-row">
     <div class="doc-copy">
       {{! The _request_body variable is filled with the parameter `body` by the preprocessor. }}
-      {{#if _show_requst_body_section}}
-        {{>(swagger "request-body") consumes=consumes body=_request_body}}
+      {{#if requestBody}}
+        {{>(swagger "request-body") body=requestBody}}
       {{/if}}
 
       {{>(swagger "parameters") parameters=parameters}}
@@ -67,14 +67,8 @@
     {{! Print examples without whitespace }}
     <div class="doc-examples">{{#if _show_requst_body_section}}
       <section>
-        {{#if consumes}}
-          <h5>Request Content-Types:
-            <span>{{#each consumes}}{{.}}{{#unless @last}}, {{/unless}}{{/each}}</span>
-          </h5>
-        {{/if}}
-
         <h5>Request Example</h5>
-        {{>(swagger "print-example") _request_body showReadOnly=false}}
+        {{>(swagger "print-example") body=requestBody showReadOnly=false}}
       </section>
     {{/if}}</div>
   </div>
