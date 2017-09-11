@@ -10,7 +10,7 @@
 </div>
 <div class="row">
 
-    <div class="col-md-6 swagger-response-model">{{>swagger/model model=response.schema}}</div>
+    <div class="col-md-6 swagger-response-model">{{>(swagger "model") model=response.schema}}</div>
 
     {{#each response.examples}}
         <div class="col-md-6 swagger-response-examples">

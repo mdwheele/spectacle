@@ -4,16 +4,16 @@
 --}}
 
 <article>
-  {{>swagger/introduction}}
-  {{>swagger/securityDefinitions}}
+  {{>(swagger "introduction")}}
+  {{>(swagger "securityDefinitions")}}
 
   {{#if showTagSummary}}
-    {{>swagger/tags}}
+    {{>(swagger "tags")}}
   {{else}}
-    {{>swagger/paths}}
+    {{>(swagger "paths")}}
   {{/if}}
 
-  {{>swagger/definitions definitions=definitions}}
+  {{>(swagger "definitions") definitions=definitions}}
 
   {{! Powered by link }}
   <div class="doc-row no-margin">

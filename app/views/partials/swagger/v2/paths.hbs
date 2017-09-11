@@ -7,10 +7,10 @@
 <h1>Paths</h1>
 {{#if showTagSummary}}
 	{{#eachSorted paths}}
-	  {{>swagger/path pathItems=. path=@key}}
+	  {{>(swagger "path") pathItems=. path=@key}}
 	{{/eachSorted}}
 {{else}}
   {{#each paths}}
-    {{>swagger/path pathItems=. path=@key}}
+    {{>(swagger "path") pathItems=. path=@key}}
   {{/each}}
 {{/if}}

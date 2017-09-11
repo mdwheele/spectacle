@@ -8,10 +8,10 @@
 {{#if responses}}
     <section class="swagger-responses">
         {{#if produces}}
-            <p>{{>swagger/list-of-labels values=produces}}</p>
+            <p>{{>(swagger "list-of-labels") values=produces}}</p>
         {{else if @root.produces}}
             <p><a href="#swagger-default-produces">Uses default content-types: </a>
-                {{>swagger/list-of-labels values=@root.produces}}
+                {{>(swagger "list-of-labels") values=@root.produces}}
             </p>
         {{/if}}
 
@@ -26,9 +26,9 @@
                 </dt>
                 <dd class="swagger-response-{{@key}}">
                     {{#if $ref}}
-                        {{>swagger/response response=(json-schema-resolve-ref $ref)}}
+                        {{>(swagger "response") response=(json-schema-resolve-ref $ref)}}
                     {{else}}
-                        {{>swagger/response response=.}}
+                        {{>(swagger "response") response=.}}
                     {{/if}}
                 </dd>
             {{/each}}

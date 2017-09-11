@@ -9,6 +9,6 @@
       </div>
     {{/if}}
     {{#each operations}}
-      {{>swagger/operation . operation=. method=method path=path}}
+      {{>(swagger "operation") . operation=. method=method path=path}}
     {{/each}}
 {{/each}}

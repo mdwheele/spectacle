@@ -8,6 +8,6 @@
   <h1>Schema Definitions</h1>
 
   {{#each definitions}}
-    {{>swagger/definition title=@key anchor="/definitions" }}
+    {{>(swagger "definition") title=@key anchor="/definitions" }}
   {{/each}}
 {{/if}}
