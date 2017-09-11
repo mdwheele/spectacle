@@ -6,10 +6,10 @@
     </div>
     <div class="doc-examples">
       <section>
-        {{#if host}}
-          <h5>API Endpoint</h5>
+        {{#if servers}}
+          <h5>API Endpoint(s)</h5>
           <!-- <div class="hljs"> -->
-            <pre><code>{{swaggerEndpoint}}</code></pre>
+            <pre><code>{{#each servers}}{{this.url}}<br/>{{/each}}</code></pre>
           <!-- </div> -->
         {{/if}}
 
@@ -27,21 +27,9 @@
           {{/if}}
         {{/if}}
 
-        {{#if consumes}}
-          <h5>Request Content-Types:
-            <span>{{#each consumes}}{{.}}{{#unless @last}}, {{/unless}}{{/each}}</span>
-          </h5>
-        {{/if}}
-
-        {{#if produces}}
-          <h5>Response Content-Types:
-            <span>{{#each produces}}{{.}}{{#unless @last}}, {{/unless}}{{/each}}</span>
-          </h5>
-        {{/if}}
-
-        {{#if schemes}}
+        {{#if components.securitySchemes}}
           <h5>Schemes:
-            <span>{{#each schemes}}{{.}}{{#unless @last}}, {{/unless}}{{/each}}</span>
+            <span>{{#each components.securitySchemes}}{{@key}}{{#unless @last}}, {{/unless}}{{/each}}</span>
           </h5>
         {{/if}}
 

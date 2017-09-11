@@ -19,6 +19,8 @@
         <nav id="nav" role="navigation">
           <h5>API Reference</h5>
           <a href="#introduction">Introduction</a>
+          <!-- <h5>Security</h5> -->
+          <a href="#authentication">Authentication</a>
           <h5>Operations</h5>
           <section>
             <a href="#tag-User">User</a>
@@ -307,9 +309,85 @@
               </div>
               <div class="doc-examples">
                 <section>
+                  <h5>API Endpoint(s)</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://api.mytommy.com/api/v1<br/>https://api.mytommy.com/api/v1<br/></code></pre>
+                  <!-- </div> -->
+                  <h5>Schemes:
+                    <span>basicAuth, api_key, petstore_auth</span>
+                  </h5>
                   <h5>Version:
                     <span>1.0.0</span>
                   </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <!-- <h1 id="security" data-traverse-target="security">Security</h1> -->
+          <h1 id="authentication" data-traverse-target="authentication">Authentication</h1>
+          <div id="security-definition-basicAuth" class="panel">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <h3 class="security-definition-title">
+                  <span class="security-name">basicAuth</span>
+                  <span class="swagger-security-definition-http"></span>
+                </h3>
+                <section class="swagger-security-definition-properties">
+                  <div class="prop-row security-definition-property">
+                    <div class="prop-name">
+                      <div class="prop-title security-definition-property-name">description</div>
+                    </div>
+                    <div class="prop-value security-definition-property-type">
+                      <p>HTTP Basic Authentication. Works over <code>HTTP</code> and <code>HTTPS</code></p>
+                    </div>
+                  </div>
+                  <div class="prop-row security-definition-property">
+                    <div class="prop-name">
+                      <div class="prop-title security-definition-property-name">scheme</div>
+                    </div>
+                    <div class="prop-value security-definition-property-type"> basic </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="security-definition-api_key" class="panel">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <h3 class="security-definition-title">
+                  <span class="security-name">api_key</span>
+                  <span class="swagger-security-definition-apiKey"></span>
+                </h3>
+                <section class="swagger-security-definition-properties">
+                  <div class="prop-row security-definition-property">
+                    <div class="prop-name">
+                      <div class="prop-title security-definition-property-name">name</div>
+                    </div>
+                    <div class="prop-value security-definition-property-type"> api_key </div>
+                  </div>
+                  <div class="prop-row security-definition-property">
+                    <div class="prop-name">
+                      <div class="prop-title security-definition-property-name">in</div>
+                    </div>
+                    <div class="prop-value security-definition-property-type"> header </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="security-definition-petstore_auth" class="panel">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <h3 class="security-definition-title">
+                  <span class="security-name">petstore_auth</span>
+                  <span class="swagger-security-definition-oauth2"></span>
+                </h3>
+                <section class="swagger-security-definition-properties">
+                  <div class="prop-row security-definition-property">
+                    <div class="prop-name">
+                      <div class="prop-title security-definition-property-name">flows</div>
+                    </div>
+                    <div class="prop-value security-definition-property-type"> [object Object] </div>
+                  </div>
                 </section>
               </div>
             </div>
